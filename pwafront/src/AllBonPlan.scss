@@ -1,0 +1,97 @@
+.BonPlan {
+    width: 100%;
+    padding-bottom: 30px;
+    
+    .rate-number{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container-bonplan {
+        padding-bottom: 50px;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        justify-content: center;
+        align-items: center;
+        background: rgba(128, 128, 128, 0.151);
+        margin: 5rem 4rem 0rem 4rem;
+        padding-top: 20px;
+        border-radius: 6px;
+
+        h1 {
+            font-size: 40px;
+            font-style: bold;
+            color: #3947bf;
+        }
+
+        .box-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 22%);
+            align-content: center;
+            justify-content: center;
+            gap: 1rem;
+            
+            .container-grid {
+                // padding: 10px;
+                border-radius: 7px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                background: #FFFFFF;
+                gap: 20px;
+                transition: 0.5s ease-in-out;
+
+                .container-text {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                    padding: 10px;
+                    border: 1px solid #3947bf;
+
+                    .hgt {
+                        height: 50px;
+                    }
+                    span {
+                        font-size: 13px;
+                        text-align: center;
+                    }
+                    .reduc-box {
+                        display: flex;
+                        padding: 0 25px 0 25px;
+                        justify-content: space-between;
+                        // gap: 7px;
+
+                        .rb {
+                            display: flex;
+                            flex-direction: column;
+                            gap: 5px;
+
+                            h3 {
+                                font-size: 17px;
+                                // text-decoration:line-through;
+                            }
+
+                            h2 {
+                                font-style: italic;
+                                font-size: 15px;
+                            }
+                        }
+                    }
+                }
+
+                h2 {
+                    font-size: 16px;
+                    text-align: center;
+                    color: green;
+                }
+            }
+            .container-grid:hover {
+                box-shadow: rgba(0, 0, 0, 0.20) 0px 34px 40px,
+                rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+                rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;   
+            }
+        }
+    }
+}

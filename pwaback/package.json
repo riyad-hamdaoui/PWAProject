@@ -1,0 +1,57 @@
+{
+  "name": "eip",
+  "private": true,
+  "version": "1.0.0",
+  "description": "back",
+  "main": "config.js",
+  "scripts": {
+    "test": "mocha ./test.test.js --reporter mocha-junit-reporter --reporter-options mochaFile=junit.xml && istanbul cover ./node_modules/mocha/bin/_mocha ./test.test.js --report=cobertura",
+    "lint": "xo",
+    "format": "xo --fix",
+    "start": "set PORT=3001 && node start.js",
+    "dev": "nodemon start.js"
+  },
+  "keywords": [
+    "express",
+    "postgres"
+  ],
+  "dependencies": {
+    "@google-cloud/storage": "^6.4.2",
+    "axios": "^0.24.0",
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.20.1",
+    "chai": "^4.3.7",
+    "chai-http": "^4.3.0",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "express": "^4.18.1",
+    "express-fileupload": "^1.4.0",
+    "firebase": "^9.9.4",
+    "fs": "^0.0.1-security",
+    "helmet": "^4.6.0",
+    "http": "^0.0.1-security",
+    "imgur": "^2.2.0",
+    "istanbul": "^0.4.5",
+    "jsonwebtoken": "^8.5.1",
+    "mocha": "^10.0.0",
+    "mocha-junit-reporter": "^2.0.2",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.5-lts.1",
+    "nodemailer": "^6.7.2",
+    "pg": "^8.7.1",
+    "request": "^2.88.2",
+    "socket.io": "^4.6.1",
+    "uuid": "^8.3.2",
+    "web-push": "^3.5.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12",
+    "webpack": "^5.77.0",
+    "webpack-cli": "^5.0.1",
+    "xo": "^0.36.1"
+  },
+  "xo": {
+    "prettier": true,
+    "space": true
+  }
+}
